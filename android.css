@@ -1,5 +1,8 @@
 #left_antenna, #right_antenna, #head, #left_arm, #torso, #right_arm, #left_leg, #right_leg {background-color:#a4c739}
 
+#body{  padding-top: 62.5%; /* 8:5 Aspect Ratio (divide 5 by 8 = 0.625) */
+}
+
 #head{ width: 400px; 
 	margin: 100px; 
 	height: 200px; 
@@ -41,18 +44,27 @@
 	height: 200px; 
 	margin: 0 auto; 
 } 
-#left_leg, #right_leg{ width: 100px; height: 200px; 
-	float: left; 
-	border-radius: 0 0 100px 100px; 
-	-webkit-border-radius: 0 0 100px 100px; 
-	-moz-border-radius: 0 0 100px 100px; 
-	-ms-border-radius: 0 0 100px 100px; 
-	-o-border-radius: 0 0 100px 100px; 
-} 
-#left_leg{ margin-left: 25px; 
-} 
-#right_leg{ margin-left: 50px; 
-}
+#left_leg, #right_leg { width: 100px; 
+	height: 200px; 
+	float: left;
+	position: relative;
+	  border-radius: 0 0 100px 100px;
+	 -webkit-border-radius: 0 0 100px 100px;
+	 -moz-border-radius: 0 0 100px 100px;
+	 -ms-border-radius: 0 0 100px 100px;
+	 -o-border-radius: 0 0 100px 100px; 
+	}
+ #left_leg { margin-left: -180px; 
+ 	margin-right: 1350px;
+ 	bottom:-75px;
+
+ 	} 
+ #right_leg { margin-right: 1360px;
+ 	margin-left: -335px;
+ 	bottom:125px;
+
+ 	}
+
 #left_eye, #right_eye { width: 30px; height: 30px; 
 	border-radius: 15px; 
 	-webkit-border-radius:15px;
@@ -90,7 +102,7 @@ margin: 0 auto;
 
 #left_antenna { position: relative; 
 top: 120px;
-left: 70px;
+left: -300px;
 transform:rotate(-33deg);
 -ms-transform: rotate(-33deg);
 -o-transform: rotate(-33deg);
@@ -98,7 +110,7 @@ transform:rotate(-33deg);
 
  #right_antenna{position: relative;
  	top: 120px;
- 	left: 210px;
+ 	left: -150px;
  	transform: rotate(33deg);
  	-webkit-transform: rotate(33deg);
  	-moz-transform:rotate(33deg);
