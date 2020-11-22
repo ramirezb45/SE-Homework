@@ -1,0 +1,25 @@
+.Box1 {
+  background-color: pink;
+  width: 150px;
+  color:purple;
+  font-size:50;
+  padding:20px;
+  animation:first 2s ease-in-out 0s infinite normal; 
+}
+.Box2 {
+  background-color:purple;
+  width: 150px;
+  color:pink;
+  font-size:50;
+  padding:20px;
+  animation:second 2s ease-in-out 0s infinite normal; 
+}
+@keyframes first{
+  from {width:100px}
+  to {width:200px}
+}
+
+@keyframes second{
+  from {width:100px}
+  to {width:200px}
+}
