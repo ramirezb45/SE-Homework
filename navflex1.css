@@ -1,0 +1,31 @@
+.nav{ 
+    
+    display:flex;
+    background-color:blue;
+    color:pink;
+    padding:20px;
+    width:170;
+    border:10px solid green;
+    transition: width 2s;
+    
+}
+  .headings{ 
+    
+    justify-content:center;
+    flex-direction:row;
+    background-color:blue;
+    color:pink;
+    padding:20px;
+    width:170;
+    border:10px solid green;
+    animation:navmove 2s ease-in-out 0s infinite normal;
+    
+}
+@keyframes navmove{
+    from {width:20px}
+    to {width:300px}
+  }
+
+  .nav:hover {
+    width:300px;
+  }
